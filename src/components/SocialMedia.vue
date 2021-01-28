@@ -1,17 +1,15 @@
 <template>
   <div>
-    <v-btn
-      v-for="(item, i) in items.slice(0, large ? items.length : 3)"
-      :key="i"
-      fab
-      class="ma-2"
-      color="info"
-      :small="!large"
-    >
-      <v-icon
-        dark
-        v-text="item.icon"
-      />
+    <v-btn>
+      <span>Linkedin</span>
+
+      <v-icon>mdi-linkedin</v-icon>
+    </v-btn>
+
+    <v-btn>
+      <span>Music</span>
+
+      <v-icon>fa-github</v-icon>
     </v-btn>
   </div>
 </template>
@@ -29,7 +27,7 @@
       items: [
         {
           name: 'Twitter',
-          icon: 'mdi-twitter',
+          icon: 'fa-github',
         },
         {
           name: 'Instagram',

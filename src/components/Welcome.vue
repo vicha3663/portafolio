@@ -9,7 +9,7 @@
         md="6"
       >
         <v-img
-          :src="require('@/assets/welcome.png')"
+          :src="require('@/assets/yo.jpg')"
           height="100vh"
         />
       </v-col>
@@ -18,7 +18,6 @@
         class="align-content-space-between layout wrap"
         cols="12"
         md="6"
-        :pa-5="$vuetify.breakpoint.smAndDown"
       >
         <base-bubble-1
           style="transform: rotate(180deg) translateY(25%)"
@@ -32,7 +31,7 @@
             cols="10"
             md="6"
           >
-            <base-heading>Welcome!</base-heading>
+            <base-heading>¡Bienvenido!</base-heading>
             <base-text>
               Lorem ipsum dolor sit amet, consectetur ad
               ipiscin elit. Etiam vulputate augue vel felis gra

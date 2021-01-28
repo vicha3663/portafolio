@@ -33,7 +33,7 @@
             />
             <base-heading class="info--text">
               Services
-            </base-heading>
+             </base-heading>
 
             <base-text class="mb-5">
               Curabitur venenatis tortor erat, quis laoreet nis<br>

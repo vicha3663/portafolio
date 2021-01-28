@@ -12,7 +12,7 @@
         md="6"
       >
         <v-img
-          :src="require('@/assets/contact.png')"
+          :src="require('@/assets/otto.png')"
           height="100%"
         />
       </v-col>
@@ -25,7 +25,7 @@
         <base-bubble-1 />
 
         <base-heading class="mb-5">
-          Get In Touch
+          Escríbeme
         </base-heading>
 
         <v-sheet
@@ -34,33 +34,33 @@
         >
           <v-text-field
             color="info"
-            label="Name"
+            label="Nombre"
             solo
             flat
           />
 
           <v-text-field
             color="info"
-            label="Email"
+            label="Correo electrónico"
             solo
             flat
           />
 
           <v-text-field
             color="info"
-            label="Subject"
+            label="Tema"
             solo
             flat
           />
 
           <v-textarea
             color="info"
-            label="Message"
+            label="Mensaje"
             solo
             flat
           />
 
-          <base-btn>Send</base-btn>
+          <base-btn>Enviar</base-btn>
         </v-sheet>
       </v-col>
     </v-row>

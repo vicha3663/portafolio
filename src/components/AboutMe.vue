@@ -25,7 +25,7 @@
         </base-text>
 
         <base-subheading class="info--text">
-          Skills
+          Habilidades
         </base-subheading>
 
         <base-text class="mb-5">
@@ -81,7 +81,7 @@
     data: () => ({
       skills: [
         {
-          name: 'Web Design',
+          name: 'css',
           value: 100,
         },
         {

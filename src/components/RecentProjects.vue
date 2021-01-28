@@ -1,73 +1,259 @@
 <template>
-  <section
-    id="recent-projects"
-    class="overflow-hidden"
-  >
-    <v-row no-gutters>
+  <v-container>
+     <v-row>
+       <v-col
+       cols="12"
+       sm="6"
+       md="6"
+       >
+         <template>
+                <v-card
+                      class="mx-auto"
+                      max-width="600"
+                    >
+                            <v-img
+                            :src="require('@/assets/otto.png')"
+                            height="400px"
+                            ></v-img>
+
+                            <v-card-title>
+                              Top western road trips
+                            </v-card-title>
+
+                            <v-card-subtitle>
+                              1,000 miles of wonder
+                            </v-card-subtitle>
+
+                          <v-card-actions>
+                              <v-btn
+                                color="orange lighten-2"
+                                text
+                              >
+                              Explore
+                            </v-btn>
+
+                          <v-spacer></v-spacer>
+
+                          <v-btn
+                       icon
+                        @click="show = !show"
+                        >
+                      <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      </v-btn>
+                    </v-card-actions>
+
+                  <v-expand-transition>
+                    <div v-show="show">
+                      <v-divider></v-divider>
+
+                      <v-card-text>
+                        I'm a thing. But, like most
+                        You won't have time for sleeping, soldier, not with all
+                        the bed making you'll be doing. Then we'll go with that
+                        data file! Hey, you add a one and two zeros to that or
+                        we walk! You're going to do his laundry? I've got to
+                        find a way to escape.
+                        </v-card-text>
+                        </div>
+                  </v-expand-transition>
+                </v-card>
+            </template>
+      </v-col>
+         <v-col
+          cols="12"
+          sm="6"
+          md="6"
+          >
+         <template>
+              <v-card
+                  class="mx-auto"
+                  max-width="344"
+                >
+                      <v-img
+                       :src="require('@/assets/project2.png')"
+                        height="200px"
+                      ></v-img>
+                      <v-card-title>
+                        Top western road trips
+                      </v-card-title>
+                      <v-card-subtitle>
+                        1,000 miles of wonder
+                      </v-card-subtitle>
+                    <v-card-actions>
+                        <v-btn
+                          color="orange lighten-2"
+                          text
+                        >
+                        Explore
+                      </v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                  icon
+                  @click="show = !show"
+                  >
+                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+            <v-expand-transition>
+              <div v-show="show">
+                <v-divider></v-divider>
+                <v-card-text>
+                  I'm a thing. But, like most
+                  politicians, he promised more than he could deliver. You won't hav
+                </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
+         </template>
+      </v-col>
       <v-col
-        class="primary text-center pa-5 white--text"
-        cols="12"
-        md="6"
-      >
-        <base-bubble-1
-          style="transform: rotate(180deg) translateX(25%)"
-        />
-
-        <base-heading>
-          Recent Projects
-        </base-heading>
-
-        <base-text class="mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipi<br>
-          scin elit. Etiam vulputate augue vel felis gravida<br>
-          porta. Lorem ipsum dolor sit amet. <v-icon>fa-pencil</v-icon>
-        </base-text>
-
-        <v-card color="secondary">
-          <v-container class="pa-2">
-            <v-row>
-              <v-col
-                v-for="project in projects"
-                :key="project"
-                cols="12"
-                md="6"
+ cols="12"
+ sm="6"
+ md="6"
+ >
+   <template>
+          <v-card
+                class="mx-auto"
+                max-width="344"
               >
-                <a href="#">
-                  <v-img
-                    :src="require(`@/assets/${project}.jpeg`)"
-                    max-height="300"
-                  />
-                </a>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </v-col>
-
-      <v-col
-        class="hidden-sm-and-down"
-        md="6"
-      >
-        <v-img
-          :src="require('@/assets/recentprojects.png')"
-          height="100%"
-        />
-      </v-col>
+                      <v-img
+                        :src="require('@/assets/rick.png')"
+                        height="200px"
+                      ></v-img>
+                      <v-card-title>
+                        Top western road trips
+                      </v-card-title>
+                      <v-card-subtitle>
+                        1,000 miles of wonder
+                      </v-card-subtitle>
+                    <v-card-actions>
+                        <v-btn
+                          color="orange lighten-2"
+                          text
+                        >
+                        Explore
+                      </v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                  icon
+                  @click="show = !show"
+                  >
+                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+            <v-expand-transition>
+              <div v-show="show">
+                <v-divider></v-divider>
+                <v-card-text>
+                  I'm a thing. But, like most
+                  politicians, he promised more than he could deliver. You won't hav
+                </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
+      </template>
+      </v-col> <v-col
+ cols="12"
+ sm="6"
+ md="6"
+ >
+   <template>
+          <v-card
+                class="mx-auto"
+                max-width="344"
+              >
+                      <v-img
+                      :src="require('@/assets/project31.png')"
+                        height="200px"
+                      ></v-img>
+                      <v-card-title>
+                        Top western road trips
+                      </v-card-title>
+                      <v-card-subtitle>
+                        1,000 miles of wonder
+                      </v-card-subtitle>
+                    <v-card-actions>
+                        <v-btn
+                          color="orange lighten-2"
+                          text
+                        >
+                        Explore
+                      </v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                 icon
+                  @click="show = !show"
+                  >
+                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
+            <v-expand-transition>
+              <div v-show="show">
+                <v-divider></v-divider>
+                <v-card-text>
+                  I'm a thing. But, like most
+                  politicians, he promised more than he could deliver.
+                  </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
+        </template>
+    </v-col>
+   <v-col
+    cols="12"
+    sm="12"
+    md="12"
+    >
+   <template>
+        <v-card
+            class="mx-auto"
+            max-width="1200PX"
+          >
+                <v-img
+                :src="require('@/assets/project4.png')"
+                height="600px"
+                ></v-img>
+                <v-card-title>
+                  Top western road trips
+                </v-card-title>
+                <v-card-subtitle>
+                  1,000 miles of wonder
+                </v-card-subtitle>
+              <v-card-actions>
+                  <v-btn
+                    color="orange lighten-2"
+                    text
+                  >
+                  Explore
+                </v-btn>
+              <v-spacer></v-spacer>
+              <v-btn
+            icon
+            @click="show = !show"
+            >
+            <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+            </v-btn>
+          </v-card-actions>
+      <v-expand-transition>
+        <div v-show="show">
+          <v-divider></v-divider>
+          <v-card-text>
+            I'm a thing. But, like most
+            politicians, he promised more than he could deliver. You won't hav
+          </v-card-text>
+        </div>
+      </v-expand-transition>
+    </v-card>
+   </template>
+</v-col>
     </v-row>
-  </section>
+  </v-container>
 </template>
-
 <script>
   export default {
     name: 'RecentProjects',
-
     data: () => ({
-      projects: [
-        'project1',
-        'project2',
-        'project3',
-        'project4',
-      ],
+      show: false,
     }),
   }
 </script>
