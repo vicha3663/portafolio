@@ -15,23 +15,23 @@
         <base-bubble-1 style="transform: translate(5%, -5%)" />
 
         <base-heading class="info--text">
-          About Me
+          ¿Quién soy?
         </base-heading>
 
         <base-text class="mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipi<br>
-          scin elit. Etiam vulputate augue vel felis gravida<br>
-          porta. Lorem ipsum dolor sit amet.
+        Mi creatividad y versatilidad están aplicados hoy en mi trabajo
+        como Front End. Anteriormente estuve vinculada al mundo digital como periodista, esta buena experiencia me llevó a especializarme
+        como desarrolladora Front End en el bootcamp de Desafío Latam.
+        En lo personal soy una enamorada de la naturaleza y seguidora de los avances de la ciencia,
+        por eso estoy en aprendizaje continuo para ir siempre conectada con este
+        mundo de rápida evolución, <br>
         </base-text>
 
         <base-subheading class="info--text">
-          Habilidades
+          Mis palabras son:
         </base-subheading>
 
-        <base-text class="mb-5">
-          Lorem ipsum dolor sit amet, consecte tur adipi scin e<br>
-          lit. Etiam vulputate augu e vel felis gravida porta.
-        </base-text>
+        <base-text class="mb-5"></base-text>
 
         <v-alert
           outlined
@@ -81,15 +81,15 @@
     data: () => ({
       skills: [
         {
-          name: 'css',
+          name: 'Empatía',
           value: 100,
         },
         {
-          name: 'Web Development',
-          value: 75,
+          name: 'Responsabilidad',
+          value: 95,
         },
         {
-          name: 'Web Support',
+          name: 'Aprendizaje continuo',
           value: 90,
         },
       ],

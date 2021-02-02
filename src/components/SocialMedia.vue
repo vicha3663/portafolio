@@ -1,15 +1,23 @@
 <template>
   <div>
-    <v-btn>
+    <v-btn href="https://www.linkedin.com/in/maria-luisa-catalan-saz/">
       <span>Linkedin</span>
 
-      <v-icon>mdi-linkedin</v-icon>
+      <v-icon
+        large
+        color="teal darken-2"
+        >
+        mdi-linkedin</v-icon>
     </v-btn>
-
     <v-btn>
-      <span>Music</span>
+      <span>Git-Hub</span>
 
-      <v-icon>fa-github</v-icon>
+      <v-icon
+      large
+      color="teal darken-2"
+      >
+      fa-github
+      </v-icon>
     </v-btn>
   </div>
 </template>

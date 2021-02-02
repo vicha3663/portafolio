@@ -9,7 +9,7 @@
         md="6"
       >
         <v-img
-          :src="require('@/assets/yo.jpg')"
+          :src="require('@/assets/marialuisa1b.jpg')"
           height="100vh"
         />
       </v-col>
@@ -31,21 +31,16 @@
             cols="10"
             md="6"
           >
-            <base-heading>¡Bienvenido!</base-heading>
+            <base-heading>¡Bienvenido a mi  portafolio!</base-heading>
             <base-text>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.<br>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.
+            Espero que hayas tenido  un buen día . Aquí te presentó mis trabajos más recientes. Puedes comenzar este recorrido haciendo scroll
+            <v-icon
+            color="#f58634"
+            >
+            mdi-arrow-down-bold-outline
+            </v-icon>
             </base-text>
-            <base-btn class="mt-4">
-              Learn More!
-            </base-btn>
-          </v-col>
+           </v-col>
         </v-row>
 
         <base-bubble-2

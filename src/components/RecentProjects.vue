@@ -1,252 +1,156 @@
 <template>
   <v-container>
-     <v-row>
-       <v-col
-       cols="12"
-       sm="6"
-       md="6"
+    <v-row no-gutters>
+      <v-col
+        class="primary text-center pa-5 white--text"
+        cols="12"
+        md="12"
+      >
+        <base-bubble-1
+          style="transform: rotate(180deg) translateX(25%)"
+        />
+
+        <base-heading>
+          Proyectos Recientes
+        </base-heading>
+
+        <base-text class="mb-5 mt-5">
+          Este portafolio está diseñado con Vuetify. <v-icon>fa-pencil</v-icon>
+        </base-text>
+       </v-col>
+    </v-row>
+      <v-row class="primary">
+      <v-col
+          class='primary'
+          cols="12"
+          sm="6"
+          md="6"
        >
          <template>
                 <v-card
                       class="mx-auto"
                       max-width="600"
-                    >
+                >
                             <v-img
-                            :src="require('@/assets/otto.png')"
+                            :src="require('@/assets/krauss.png')"
                             height="400px"
+                            aspect-ratio="1.7"
+                            contain
                             ></v-img>
 
                             <v-card-title>
-                              Top western road trips
+                              Tienda de juguetes
                             </v-card-title>
 
                             <v-card-subtitle>
-                              1,000 miles of wonder
+                              Realizada con Bootstrap-vue la página está conectada a una base de datos en Firebase. Incluye control de acceso.
                             </v-card-subtitle>
-
-                          <v-card-actions>
-                              <v-btn
-                                color="orange lighten-2"
-                                text
-                              >
-                              Explore
-                            </v-btn>
-
-                          <v-spacer></v-spacer>
-
-                          <v-btn
-                       icon
-                        @click="show = !show"
-                        >
-                      <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                      </v-btn>
-                    </v-card-actions>
-
-                  <v-expand-transition>
-                    <div v-show="show">
-                      <v-divider></v-divider>
-
-                      <v-card-text>
-                        I'm a thing. But, like most
-                        You won't have time for sleeping, soldier, not with all
-                        the bed making you'll be doing. Then we'll go with that
-                        data file! Hey, you add a one and two zeros to that or
-                        we walk! You're going to do his laundry? I've got to
-                        find a way to escape.
-                        </v-card-text>
-                        </div>
-                  </v-expand-transition>
                 </v-card>
-            </template>
+         </template>
       </v-col>
-         <v-col
+       <v-col
           cols="12"
           sm="6"
           md="6"
           >
-         <template>
+        <template>
               <v-card
                   class="mx-auto"
-                  max-width="344"
+                  max-width="600"
                 >
                       <v-img
                        :src="require('@/assets/project2.png')"
-                        height="200px"
+                        height="400px"
+                        aspect-ratio="1.7"
+                        contain
                       ></v-img>
                       <v-card-title>
-                        Top western road trips
+                         Trekking
                       </v-card-title>
                       <v-card-subtitle>
-                        1,000 miles of wonder
+                        Sitio realizado en  CSS.
+                        <br>
+                        <br>
                       </v-card-subtitle>
-                    <v-card-actions>
-                        <v-btn
-                          color="orange lighten-2"
-                          text
-                        >
-                        Explore
-                      </v-btn>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                  icon
-                  @click="show = !show"
-                  >
-                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-            <v-expand-transition>
-              <div v-show="show">
-                <v-divider></v-divider>
-                <v-card-text>
-                  I'm a thing. But, like most
-                  politicians, he promised more than he could deliver. You won't hav
-                </v-card-text>
-              </div>
-            </v-expand-transition>
-          </v-card>
-         </template>
-      </v-col>
-      <v-col
- cols="12"
- sm="6"
- md="6"
- >
-   <template>
-          <v-card
+              </v-card>
+          </template>
+        </v-col>
+       <v-col
+         cols="12"
+         sm="6"
+         md="6"
+      >
+      <template>
+        <v-card
                 class="mx-auto"
-                max-width="344"
+                max-width="600"
               >
                       <v-img
-                        :src="require('@/assets/rick.png')"
-                        height="200px"
+                          :src="require('@/assets/rick.png')"
+                          height="400px"
+                          aspect-ratio="1.7"
+                          contain
                       ></v-img>
                       <v-card-title>
-                        Top western road trips
+                        Rick and Morty
                       </v-card-title>
                       <v-card-subtitle>
-                        1,000 miles of wonder
+                        La página está conectada a Api y basada en Bootstrap.
                       </v-card-subtitle>
-                    <v-card-actions>
-                        <v-btn
-                          color="orange lighten-2"
-                          text
-                        >
-                        Explore
-                      </v-btn>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                  icon
-                  @click="show = !show"
-                  >
-                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-            <v-expand-transition>
-              <div v-show="show">
-                <v-divider></v-divider>
-                <v-card-text>
-                  I'm a thing. But, like most
-                  politicians, he promised more than he could deliver. You won't hav
-                </v-card-text>
-              </div>
-            </v-expand-transition>
-          </v-card>
-      </template>
-      </v-col> <v-col
- cols="12"
- sm="6"
- md="6"
- >
-   <template>
+              </v-card>
+        </template>
+      </v-col>
+       <v-col
+         cols="12"
+         sm="6"
+         md="6"
+       >
+        <template>
           <v-card
                 class="mx-auto"
-                max-width="344"
-              >
+                max-width="600"
+          >
                       <v-img
                       :src="require('@/assets/project31.png')"
-                        height="200px"
+                        height="400px"
+                        aspect-ratio="1.7"
+                        contain
                       ></v-img>
                       <v-card-title>
-                        Top western road trips
+                        Conferencias en un café
                       </v-card-title>
                       <v-card-subtitle>
-                        1,000 miles of wonder
+                        Integramente realizada en CSS
                       </v-card-subtitle>
-                    <v-card-actions>
-                        <v-btn
-                          color="orange lighten-2"
-                          text
-                        >
-                        Explore
-                      </v-btn>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                 icon
-                  @click="show = !show"
-                  >
-                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                </v-btn>
-              </v-card-actions>
-            <v-expand-transition>
-              <div v-show="show">
-                <v-divider></v-divider>
-                <v-card-text>
-                  I'm a thing. But, like most
-                  politicians, he promised more than he could deliver.
-                  </v-card-text>
-              </div>
-            </v-expand-transition>
-          </v-card>
-        </template>
-    </v-col>
-   <v-col
-    cols="12"
-    sm="12"
-    md="12"
-    >
-   <template>
-        <v-card
-            class="mx-auto"
-            max-width="1200PX"
-          >
-                <v-img
-                :src="require('@/assets/project4.png')"
-                height="600px"
-                ></v-img>
-                <v-card-title>
-                  Top western road trips
-                </v-card-title>
-                <v-card-subtitle>
-                  1,000 miles of wonder
-                </v-card-subtitle>
-              <v-card-actions>
-                  <v-btn
-                    color="orange lighten-2"
-                    text
-                  >
-                  Explore
-                </v-btn>
-              <v-spacer></v-spacer>
-              <v-btn
-            icon
-            @click="show = !show"
+             </v-card>
+          </template>
+        </v-col>
+        <v-col
+              cols="12"
+              sm="12"
+              md="12"
+        >
+         <template>
+           <v-card
+                class="mx-auto"
+                max-width="500"
             >
-            <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-            </v-btn>
-          </v-card-actions>
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-          <v-card-text>
-            I'm a thing. But, like most
-            politicians, he promised more than he could deliver. You won't hav
-          </v-card-text>
-        </div>
-      </v-expand-transition>
-    </v-card>
-   </template>
-</v-col>
-    </v-row>
+                        <v-img
+                        :src="require('@/assets/project4.png')"
+                        height="400px"
+                        aspect-ratio="1.7"
+                        contain
+                        ></v-img>
+                        <v-card-title>
+                        Revista de Autos
+                    </v-card-title>
+                       <v-card-subtitle>
+                          Realizada usando CSS y Bootstrap.
+                      </v-card-subtitle>
+                </v-card>
+            </template>
+          </v-col>
+      </v-row>
   </v-container>
 </template>
 <script>

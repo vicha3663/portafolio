@@ -1,12 +1,6 @@
 <template>
-  <section
-    id="services"
-    class="overflow-hidden"
-  >
-    <v-row
-      class="accent"
-      no-gutters
-    >
+  <div>
+    <v-row>
       <v-col
         class="hidden-sm-and-down"
         md="6"
@@ -16,7 +10,6 @@
           height="100%"
         />
       </v-col>
-
       <v-col
         class="text-center pa-5"
         cols="12"
@@ -32,17 +25,14 @@
               style="transform: translateX(55%)"
             />
             <base-heading class="info--text">
-              Services
+              Competencias
              </base-heading>
 
             <base-text class="mb-5">
-              Curabitur venenatis tortor erat, quis laoreet nis<br>
-              lobortis eget. Fusce tempor aucto.
+              <br>
             </base-text>
-          </v-col>
-
-          <v-col
-            v-for="(service, i) in services"
+          </v-col> <v-col
+            v-for="(frame, i) in frame"
             :key="i"
             class="text-center mb-3"
             md="6"
@@ -56,49 +46,57 @@
               <v-icon
                 dark
                 size="52"
-                v-text="service.icon"
+                v-text="frame.icon"
               />
             </v-avatar>
 
             <base-text>
               <div
                 class="mb-2"
-                v-text="service.name"
+                v-text="frame.name"
               />
-              <div v-html="service.blurb" />
+              <div v-html="frame.blurb" />
             </base-text>
-          </v-col>
+         </v-col>
         </v-row>
       </v-col>
     </v-row>
-  </section>
+</div>
 </template>
-
 <script>
   export default {
     name: 'Services',
-
     data: () => ({
-      services: [
+      frame: [
         {
-          name: 'Research',
-          icon: 'mdi-clipboard-text-outline',
-          blurb: 'Curabitur et nisi semper,<br> pellent e sque ',
+          name: 'HTML5',
+          icon: 'mdi-language-html5',
+          blurb: '',
         },
         {
-          name: 'Design',
-          icon: 'mdi-pencil-outline',
-          blurb: 'Curabitur et nisi semper, <br>pellent.',
+          name: 'CSS',
+          icon: 'mdi-language-css3',
+          blurb: '',
         },
         {
-          name: 'Development',
-          icon: 'mdi-settings-outline',
-          blurb: 'Curabitur et nisi semper, <br>pellent.',
+          name: 'Bootstrap',
+          icon: 'mdi-bootstrap',
+          blurb: '',
         },
         {
-          name: 'Support',
-          icon: 'mdi-account',
-          blurb: 'Curabitur et nisi semper, <br>pellent.',
+          name: 'Java',
+          icon: 'mdi-language-java',
+          blurb: '',
+        },
+        {
+          name: 'Api Rest',
+          icon: 'mdi-api',
+          blurb: '',
+        },
+        {
+          name: 'Firebase',
+          icon: 'mdi-firebase',
+          blurb: '',
         },
       ],
     }),
