@@ -33,7 +33,7 @@
           >
             <base-heading>¡Bienvenido a mi  portafolio!</base-heading>
             <base-text>
-            Espero que hayas tenido  un buen día . Aquí te presentó mis trabajos más recientes. Puedes comenzar este recorrido haciendo scroll
+            Espero que hayas tenido  un buen día . Aquí te presentó mis trabajos más recientes. Puedes comenzar este recorrido.
             <v-icon
             color="#f58634"
             >

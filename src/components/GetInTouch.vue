@@ -16,7 +16,6 @@
           height="100%"
         />
       </v-col>
-
       <v-col
         class="pa-5"
         cols="12"
